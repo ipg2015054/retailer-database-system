@@ -1,0 +1,78 @@
+<head>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<div id="main">
+  <div id="header">
+    <div id="logo">
+      <div id="logo_text">
+        <!-- class="logo_colour", allows you to change the colour of the text -->
+        <h1><a href="homme.html"><span class="logo_colour">Nicro Accounts</span></a></h1>
+        <h2>Online Retail Database Management System</h2>
+      </div>
+    </div>
+    <div id="menubar">
+      <ul id="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="bill.html">Bill &amp; Order</a></li>
+        <li><a href="stock.php">Current Stock</a></li>
+        <li><a href="customer.html">Customer &amp; Supplier</a></li>
+        <li><a href="balance.php">Balance Sheet &amp; Staff list</a>&nbsp;&nbsp;</li>
+      </ul>
+    </div>
+  </div>
+  <div id="site_content">
+
+    <div id="content">
+      <!-- insert the page content here -->
+      <div class="form_settings">
+        <h2>View Customer</h2>
+        <form action="customer_view.php"><input class="submit" name="name" type="submit" value="View Customer" /></form>
+        <br>
+        <br>
+        <br>
+        <h2>New Customer Application Form</h2>
+        <form action="customer_add.php" method="GET">
+
+          <p>Customer Name&nbsp;
+            <input name="name" type="text" value="" />&nbsp;</p>
+          <p>Mobile Number &nbsp;&nbsp;
+            <input name="number" type="text" value="" />&nbsp; &nbsp;</p>
+          <p>Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <input name="address" type="text" value="" />&nbsp;</p>
+          <p>Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <input name="email" type="text" value="" />&nbsp;</p>
+          <p style="padding-top: 15px;">&nbsp;
+            <input class="submit" name="submit" type="submit" value="Create Customer" />
+          </p>
+          <h1>&nbsp;</h1>
+          <h2>View Supplier</h2>
+          <input class="submit" name="name" type="submit" value="View Supplier" />
+          </form>
+          <br>
+          <br>
+          <br>
+          <form action="supplier_add.php" method="GET">
+          <h2>New Supplier Application Form</h2>
+          <div class="form_settings">&nbsp;</div>
+          <p>Supplier Name &nbsp;
+            <input name="name1" type="text" value="" />
+          </p>
+          <p>Mobile Number &nbsp;
+            <input name="number1" type="text" value="" />&nbsp;</p>
+          <p>Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input name="address1" type="text" value="" />&nbsp;</p>
+          <p>Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input name="email1" type="text" value="" />
+          </p>
+          <p>Pay Method &nbsp; &nbsp; &nbsp;&nbsp;
+            <input name="pay" type="text" value="" />
+          </p>
+          <p style="padding-top: 15px;">&nbsp;
+            <input class="submit" name="submit" type="submit" value="Create Supplier" />
+          </p>
+          <p>&nbsp;<a href="home.html">Home</a> |<a href="bill.html">Bill &amp; Order</a>|<a href="stock.php">Current Stock</a>|<a href="customer.html">Customer &amp; Supplier</a>| <a href="balance.php">Balance Sheet &amp; Staff list</a></p>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
